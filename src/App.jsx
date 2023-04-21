@@ -8,9 +8,9 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
   StarsCanvas,
   Metrics,
+  Credits,
 } from "./components";
 
 const App = () => {
@@ -32,6 +32,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
+      <Credits />
     </BrowserRouter>
   );
 };

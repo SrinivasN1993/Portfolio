@@ -44,17 +44,17 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.div className="flex">
+      <motion.div className="flex flex-wrap">
         <motion.div className="flex-2">
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
-            With 6 years of extensive experience in TypeScript, JavaScript
-            (ES6), and frameworks such as Angular and Node.js, I can code your
-            ideas to life. I'm versatile and collaborate closely with clients to
-            create efficient, scalable, and user-friendly web products that
-            solve real-world problems. <br />
+            With extensive experience in TypeScript, JavaScript (ES6), and
+            frameworks such as Angular and Node.js, I can code your ideas to
+            life. I'm versatile and collaborate closely with clients to create
+            efficient, scalable, and user-friendly web products that solve
+            real-world problems. <br />
             <br />
             Let's chat!
           </motion.p>

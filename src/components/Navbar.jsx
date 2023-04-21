@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, github, linkedin } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -33,23 +33,40 @@ const Navbar = () => {
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to='/'
-          className='flex items-center gap-2'
+          to="/"
+          className="flex items-center gap-2"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Srinivas Nambi &nbsp;
-            <span className='sm:block hidden'> | &nbsp;Web Development</span>
+            <span className="sm:block hidden"> | &nbsp;Web Development</span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
+          <div className="flex items-center gap-2">
+            <a
+              href="https://www.linkedin.com/in/srinivasnambi/"
+              target="_blank"
+            >
+              <img
+                className="w-7 h-7 opacity-80 hover:opacity-100 cursor-pointer"
+                src={linkedin}
+              ></img>
+            </a>
+            <a href="https://github.com/SrinivasN1993/" target="_blank">
+              <img
+                className="w-8 h-8 opacity-80 hover:opacity-100 cursor-pointer"
+                src={github}
+              ></img>
+            </a>
+          </div>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -63,11 +80,28 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <div className="flex items-center gap-2 mr-4">
+            <a
+              href="https://www.linkedin.com/in/srinivasnambi/"
+              target="_blank"
+            >
+              <img
+                className="w-7 h-7 opacity-80 hover:opacity-100 cursor-pointer"
+                src={linkedin}
+              ></img>
+            </a>
+            <a href="https://github.com/SrinivasN1993/" target="_blank">
+              <img
+                className="w-8 h-8 opacity-80 hover:opacity-100 cursor-pointer"
+                src={github}
+              ></img>
+            </a>
+          </div>
           <img
             src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
 
@@ -76,7 +110,7 @@ const Navbar = () => {
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}

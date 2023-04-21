@@ -9,7 +9,7 @@ const Metric = ({ metric, index }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="px-12 border-r-2 border-white last:border-0"
+      className="pr-10 border-r-2 border-white last:border-0"
     >
       <p className="text-4xl text-center">
         <CountUp
@@ -33,7 +33,7 @@ const Metrics = () => {
         <h2 className={styles.sectionHeadText}>Background.</h2>
       </motion.div>
 
-      <div className="flex mx-8 justify-center mt-20">
+      <div className="flex flex-wrap mx-8 justify-center mt-20 gap-10">
         {metrics.map((metric, index) => (
           <Metric key={`metric-${index}`} metric={metric} index />
         ))}
