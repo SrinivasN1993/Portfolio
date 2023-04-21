@@ -57,6 +57,24 @@ const services = [
   },
 ];
 
+const metrics = [
+  {
+    number: 6,
+    spChar: "",
+    measure: "Years of Experience",
+  },
+  {
+    number: 20,
+    spChar: "+",
+    measure: "Projects Delivered",
+  },
+  {
+    number: 200000,
+    spChar: "+",
+    measure: "Users Impacted",
+  },
+];
+
 const technologies = [
   {
     name: "HTML 5",
@@ -189,7 +207,7 @@ const testimonials = [
   {
     testimonial:
       "My teams look up to Srinivas for his technical skills and effective leadership. He is an exceptional engineer that you can bank on.",
-    name: "Subramanian Doraiswamy",
+    name: "Subramanian D.",
     designation: "Senior Manager",
     company: "Dell Technologies",
     image: "https://randomuser.me/api/portraits/men/3.jpg",
@@ -262,4 +280,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, metrics, projects };
