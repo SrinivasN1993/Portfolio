@@ -188,11 +188,11 @@ const testimonials = [
   },
   {
     testimonial:
-      "Srinivas always thinks one step ahead, anticipates future asks, and builds them into future design to continuously improve the user experience",
-    name: "Joel R. Hayes",
-    designation: "Senior Consultant",
+      "My teams look up to Srinivas for his technical skills and effective leadership. He is an exceptional engineer that you can bank on.",
+    name: "Subramanian Doraiswamy",
+    designation: "Senior Manager",
     company: "Dell Technologies",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
+    image: "https://randomuser.me/api/portraits/men/3.jpg",
   },
 ];
 
