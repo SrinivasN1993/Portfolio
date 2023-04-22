@@ -26,6 +26,8 @@ import vue from "./tech/vue.png";
 import dell from "./company/dell.png";
 import cmu from "./company/cmu.png";
 import self from "./self.jpeg";
+import sujit from "./sujit.jpeg";
+import subbu from "./subbu.jpeg";
 
 export {
   logo,
@@ -54,4 +56,6 @@ export {
   vue,
   self,
   linkedin,
+  sujit,
+  subbu,
 };

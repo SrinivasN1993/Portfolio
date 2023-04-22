@@ -8,10 +8,10 @@ import { metrics } from "../constants";
 const Metric = ({ metric, index }) => {
   return (
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="pr-10 border-r-2 border-white last:border-0"
+      variants={fadeIn("right", "spring", index * 0.5, 0.5)}
+      className="pr-10 border-0 sm:border-r-2 sm:border-white last:border-0"
     >
-      <p className="text-4xl text-center">
+      <p className="text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-green-600">
         <CountUp
           startOnMount={false}
           end={metric.number}
@@ -20,7 +20,7 @@ const Metric = ({ metric, index }) => {
         />
         {metric.spChar || ""}
       </p>
-      <p className="text-xl">{metric.measure}</p>
+      <p className="text-xl text-center">{metric.measure}</p>
     </motion.div>
   );
 };

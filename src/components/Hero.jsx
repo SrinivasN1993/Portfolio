@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { NeonLightsCanvas } from "./canvas";
 
 const Hero = () => {
   return (
@@ -16,7 +16,10 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Srinivas Nambi</span>
+            Hi, I'm{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-green-600">
+              Srinivas Nambi
+            </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I build web and mobile applications
@@ -24,7 +27,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      <NeonLightsCanvas />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

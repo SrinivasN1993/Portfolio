@@ -18,6 +18,8 @@ import {
   cmu,
   angular,
   vue,
+  sujit,
+  subbu,
 } from "../assets";
 
 export const navLinks = [
@@ -135,7 +137,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2022 - May 2023",
     points: [
-      "Relevant Courses: Web Application Development, Database Management, Java Programming",
+      "Relevant Courses: Web Application Development, Database Management, Java Programming, Engineering Data-Intensive Scalable Systems",
     ],
   },
   {
@@ -145,10 +147,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2021 - Apr 2022",
     points: [
-      "Functioned as the UI lead and oversaw design approval, budget decisions, accessibility, and architecture for 4 projects",
+      "Led UI effort and oversaw design approval, budget decisions, accessibility, and architecture for 4 projects",
       "Architected and built 2 Angular applications with reactive state management for the Dell Digital Supply Chain",
       "Ensured UI components are scalable, performant, and 100% web content accessibility compliant",
-      "Implemented CI/CD with GitLab, increased deployment frequency by 30%, and reduced deployment time by 50%",
       "Achieved 2x better performance through advanced caching, parallelization, and non-blocking processes",
       "Collaborated closely with product managers, UX designers, and cross-functional teams in an Agile environment",
     ],
@@ -163,7 +164,6 @@ const experiences = [
       "Processed and displayed up to 5000 EMC orders on the Dell platform daily as part of the Dell-EMC merger",
       "Increased user retention by 30% by ensuring cross-browser support and extensive testing with Chrome DevTools",
       "Enforced 3x better security and seamless login through Single Sign-On, OAuth, and JWT",
-      "Exposed valuable order information to over 50K internal users in close collaboration with clients and stakeholders in Ireland, Malaysia, Japan, and the United States",
       "Constructed a workflow management system for distressed orders that resulted in 35% faster deliveries",
       "Devised an intuitive user interface walkthrough feature and increased user engagement by 20%",
     ],
@@ -191,7 +191,7 @@ const testimonials = [
     name: "Sujit Sahoo",
     designation: "Solutions Architect",
     company: "Dell Technologies",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    image: sujit,
   },
   {
     testimonial:
@@ -207,7 +207,7 @@ const testimonials = [
     name: "Subramanian D.",
     designation: "Senior Manager",
     company: "Dell Technologies",
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    image: subbu,
   },
 ];
 

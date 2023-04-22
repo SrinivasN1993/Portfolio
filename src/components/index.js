@@ -1,7 +1,7 @@
 import {
   EarthCanvas,
   BallCanvas,
-  ComputersCanvas,
+  NeonLightsCanvas,
   StarsCanvas,
 } from "./canvas";
 import Hero from "./Hero";
@@ -28,6 +28,6 @@ export {
   CanvasLoader,
   EarthCanvas,
   BallCanvas,
-  ComputersCanvas,
+  NeonLightsCanvas,
   StarsCanvas,
 };
