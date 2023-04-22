@@ -20,6 +20,9 @@ import {
   vue,
   sujit,
   subbu,
+  mysql,
+  java,
+  aws,
 } from "../assets";
 
 export const navLinks = [
@@ -100,14 +103,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Vue JS",
-    icon: vue,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
   },
@@ -116,8 +111,16 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "AWS",
+    icon: aws,
   },
   {
     name: "Git",

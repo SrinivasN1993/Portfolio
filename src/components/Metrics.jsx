@@ -11,7 +11,7 @@ const Metric = ({ metric, index }) => {
       variants={fadeIn("right", "spring", index * 0.5, 0.5)}
       className="pr-10 border-0 sm:border-r-2 sm:border-white last:border-0"
     >
-      <p className="text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-green-600">
+      <p className="text-4xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-green-600 font-medium">
         <CountUp
           startOnMount={false}
           end={metric.number}
