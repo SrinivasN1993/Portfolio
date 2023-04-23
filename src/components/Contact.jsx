@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -22,6 +21,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [operationMessage, setOerationMessage] = useState("");
 
   const handleChange = (e) => {
     const { target } = e;
@@ -53,7 +53,9 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          setOerationMessage(
+            "Thank you. I will get back to you as soon as possible."
+          );
 
           setForm({
             name: "",
@@ -65,9 +67,14 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Something went wrong, please try again.");
+          setOerationMessage("Something went wrong, please try again.");
         }
-      );
+      )
+      .finally(() => {
+        setTimeout(() => {
+          setOerationMessage("");
+        }, 3000);
+      });
   };
 
   return (
@@ -126,6 +133,7 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+          <div className="ml-2 font-normal text-base">{operationMessage}</div>
         </form>
       </motion.div>
 
@@ -133,7 +141,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
       </motion.div>
     </div>
   );

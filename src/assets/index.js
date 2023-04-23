@@ -16,9 +16,7 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import angular from "./tech/angular.png";
 import vue from "./tech/vue.png";
 import java from "./tech/java.png";
@@ -27,9 +25,9 @@ import aws from "./tech/aws.png";
 
 import dell from "./company/dell.png";
 import cmu from "./company/cmu.png";
-import self from "./self.jpeg";
-import sujit from "./sujit.jpeg";
-import subbu from "./subbu.jpeg";
+import self from "./self.webp";
+import sujit from "./sujit.jpg";
+import subbu from "./subbu.jpg";
 
 export {
   logo,
@@ -48,9 +46,7 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  tailwind,
   typescript,
-  threejs,
   dell,
   cmu,
   angular,

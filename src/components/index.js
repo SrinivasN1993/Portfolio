@@ -1,9 +1,4 @@
-import {
-  EarthCanvas,
-  BallCanvas,
-  NeonLightsCanvas,
-  StarsCanvas,
-} from "./canvas";
+import { BallCanvas, NeonLightsCanvas, StarsCanvas } from "./canvas";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -26,7 +21,6 @@ export {
   Metrics,
   Credits,
   CanvasLoader,
-  EarthCanvas,
   BallCanvas,
   NeonLightsCanvas,
   StarsCanvas,

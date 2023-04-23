@@ -29,8 +29,8 @@ const Metrics = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Impact</p>
-        <h2 className={styles.sectionHeadText}>Background.</h2>
+        <p className={styles.sectionSubText}>Results</p>
+        <h2 className={styles.sectionHeadText}>Impact.</h2>
       </motion.div>
 
       <div className="flex flex-wrap mx-8 justify-center mt-20 gap-10">
