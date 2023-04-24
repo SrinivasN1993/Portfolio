@@ -21,7 +21,7 @@ const NeonLights = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={neonLights.scene}
-        scale={isMobile ? 0.03 : 0.09}
+        scale={isMobile ? 0.05 : 0.09}
         position={isMobile ? [0, -1.5, -0] : [0, -2, 0]}
         rotation={[0, 4.3, 0]}
       />

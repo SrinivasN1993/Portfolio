@@ -30,9 +30,9 @@ const App = () => {
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
+          <Credits />
         </div>
       </div>
-      <Credits />
     </BrowserRouter>
   );
 };
