@@ -9,14 +9,14 @@ import { fadeIn, textVariant } from "../utils/motion";
 const Education = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="hidden sm:block">
         <p className={`${styles.sectionSubText} text-center`}>Alma Mater</p>
         <h2 className={`${styles.sectionHeadText} text-center`}>Education</h2>
       </motion.div>
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className="relative mt-12 h-[626px] flex"
+        className="hidden sm:relative sm:mt-12 sm:h-[626px] sm:flex"
       >
         <motion.img src={cmu} className="absolute z-0 flex-1"></motion.img>
         <motion.div className="flex flex-1 z-10 h-auto relative">
