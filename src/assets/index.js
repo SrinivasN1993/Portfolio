@@ -24,10 +24,14 @@ import mysql from "./tech/mysql.png";
 import aws from "./tech/aws.png";
 
 import dell from "./company/dell.png";
-import cmu from "./company/cmu.png";
+// import cmu from "./company/cmu.png";
 import self from "./self.webp";
 import sujit from "./sujit.jpg";
 import subbu from "./subbu.jpg";
+
+import cmu from "./cmu-bg.png";
+import cmuw from "./cmu-wordmark.png";
+import garland from "./garland.png";
 
 export {
   logo,
@@ -58,4 +62,6 @@ export {
   java,
   mysql,
   aws,
+  cmuw,
+  garland,
 };

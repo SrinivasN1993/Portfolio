@@ -11,6 +11,7 @@ import {
   StarsCanvas,
   Metrics,
   Credits,
+  Education,
 } from "./components";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         </div>
         <About />
         <Tech />
+        <Education />
         <Experience />
         {/* <Works /> */}
         <Feedbacks />
