@@ -16,23 +16,26 @@ const Education = () => {
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className="hidden sm:relative sm:mt-12 sm:h-[626px] sm:flex"
+        className="hidden sm:mt-12 sm:flex bg-tartan h-[70vh]"
       >
-        <motion.img src={cmu} className="absolute z-0 flex-1"></motion.img>
-        <motion.div className="flex flex-1 z-10 h-auto relative">
-          <div className="flex-1 flex flex-col content-center pl-8 pt-[82px]">
+        <motion.div className="flex items-center justify-center bg-[rgba(0,0,0,0.3)] px-12 py-6">
+          <div className="flex flex-[3] flex-col content-center pr-10">
             <div>
-              <img src={garland} className="h-[150px]"></img>
+              <img
+                src={garland}
+                className="h-[50px] sm:h-[100px] md:h-[150px]"
+              ></img>
             </div>
             <p className={styles.sectionHeadText}>A Proud Tartan</p>
             <p className={styles.sectionSubText}>
-              Master of Information Systems Management - Class of 2023
+              Master of Information Systems Management
             </p>
+            <p className={styles.sectionSubText}>Class of 2023</p>
             <br />
             <p className={styles.sectionSubText}>Awarded Highest Distinction</p>
           </div>
-          <div className="flex-1 ml-10">
-            <img src={cmuw} className="mt-12"></img>
+          <div className="flex flex-[2] items-center justify-items-center">
+            <img src={cmuw}></img>
           </div>
         </motion.div>
       </motion.div>
