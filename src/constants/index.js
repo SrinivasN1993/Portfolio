@@ -13,13 +13,13 @@ import {
   docker,
   reactNative,
   dell,
-  cmu,
   angular,
   sujit,
   subbu,
   mysql,
   java,
   aws,
+  paypal,
 } from "../assets";
 
 export const navLinks = [
@@ -130,17 +130,15 @@ const technologies = [
 ];
 
 const experiences = [
-  // {
-  //   title: "Master of Information Systems Management",
-  //   company_name: "Carnegie Mellon University, Heinz College",
-  //   location: "Pittsburgh, United States",
-  //   icon: cmu,
-  //   iconBg: "#383E56",
-  //   date: "May 2022 - May 2023",
-  //   points: [
-  //     "Relevant Courses: Web Application Development, Database Management, Java Programming, Engineering Data-Intensive Scalable Systems",
-  //   ],
-  // },
+  {
+    title: "Software Engineer 3",
+    company_name: "PayPal",
+    location: "Austin, Texas",
+    icon: paypal,
+    iconBg: "#E6DEDD",
+    date: "July 2023 - Present",
+    points: ["Part of the API Excellence and Sandbox Engineering team"],
+  },
   {
     title: "Senior Software Engineer",
     company_name: "Dell Technologies",

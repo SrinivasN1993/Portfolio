@@ -4,6 +4,10 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+// const getScale = () => {
+//   return (window.innerWidth / 1000) * 0.1;
+// };
+
 const NeonLights = ({ isMobile }) => {
   const neonLights = useGLTF("./neon_lobby_2/scene.gltf");
 
@@ -21,7 +25,7 @@ const NeonLights = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={neonLights.scene}
-        scale={isMobile ? 0.05 : 0.09}
+        scale={isMobile ? 0.05 : 0.09} // isMobile ? 0.05 : 0.09
         position={isMobile ? [0, -1.5, -0] : [0, -2, 0]}
         rotation={[0, 4.3, 0]}
       />

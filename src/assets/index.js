@@ -24,6 +24,7 @@ import mysql from "./tech/mysql.png";
 import aws from "./tech/aws.png";
 
 import dell from "./company/dell.png";
+import paypal from "./company/paypal.png";
 // import cmu from "./company/cmu.png";
 import self from "./self.webp";
 import sujit from "./sujit.jpg";
@@ -64,4 +65,5 @@ export {
   aws,
   cmuw,
   garland,
+  paypal,
 };

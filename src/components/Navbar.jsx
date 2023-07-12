@@ -25,6 +25,25 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const LinkGit = () => {
+    return (
+      <div className="flex items-center gap-4 sm:mr-16">
+        <a href="https://www.linkedin.com/in/srinivasnambi/" target="_blank">
+          <img
+            className="w-7 h-7 opacity-80 hover:opacity-100 cursor-pointer"
+            src={linkedin}
+          ></img>
+        </a>
+        <a href="https://github.com/SrinivasN1993/" target="_blank">
+          <img
+            className="w-8 h-8 opacity-80 hover:opacity-100 cursor-pointer"
+            src={github}
+          ></img>
+        </a>
+      </div>
+    );
+  };
+
   return (
     <nav
       className={`${
@@ -45,87 +64,67 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Srinivas Nambi &nbsp;
-            <span className="sm:block hidden"> | &nbsp;Web Dev</span>
+            <span className="md:block hidden"> | &nbsp;Web Developer</span>
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
-          <div className="flex items-center gap-4">
-            <a
-              href="https://www.linkedin.com/in/srinivasnambi/"
-              target="_blank"
-            >
-              <img
-                className="w-7 h-7 opacity-80 hover:opacity-100 cursor-pointer"
-                src={linkedin}
-              ></img>
-            </a>
-            <a href="https://github.com/SrinivasN1993/" target="_blank">
-              <img
-                className="w-8 h-8 opacity-80 hover:opacity-100 cursor-pointer"
-                src={github}
-              ></img>
-            </a>
+        <div className="flex">
+          <div className="hidden sm:block">
+            <LinkGit />
           </div>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
+
+          <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
+            {navLinks.map((nav) => (
+              <li
+                key={nav.id}
+                className={`${
+                  active === nav.title ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                onClick={() => setActive(nav.title)}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
+          </ul>
+
+          <div className="sm:hidden flex flex-1 justify-end items-center">
+            <img
+              src={toggle ? close : menu}
+              alt="menu"
+              className="w-[28px] h-[28px] object-contain"
+              onClick={() => setToggle(!toggle)}
+            />
+
+            <div
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+                !toggle ? "hidden" : "flex"
+              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
-
-        <div className="sm:hidden flex flex-1 justify-end items-center">
-          <div className="flex items-center gap-4 mr-4">
-            <a
-              href="https://www.linkedin.com/in/srinivasnambi/"
-              target="_blank"
-            >
-              <img
-                className="w-7 h-7 opacity-80 hover:opacity-100 cursor-pointer"
-                src={linkedin}
-              ></img>
-            </a>
-            <a href="https://github.com/SrinivasN1993/" target="_blank">
-              <img
-                className="w-8 h-8 opacity-80 hover:opacity-100 cursor-pointer"
-                src={github}
-              ></img>
-            </a>
-          </div>
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain"
-            onClick={() => setToggle(!toggle)}
-          />
-
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-          >
-            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-              {navLinks.map((nav) => (
+              <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+                {navLinks.map((nav) => (
+                  <li
+                    key={nav.id}
+                    className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                      active === nav.title ? "text-white" : "text-secondary"
+                    }`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(nav.title);
+                    }}
+                  >
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  </li>
+                ))}
                 <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
+                  className={`${!toggle ? "hidden" : "flex"}`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <LinkGit />
                 </li>
-              ))}
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
