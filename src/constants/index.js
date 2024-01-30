@@ -136,8 +136,13 @@ const experiences = [
     location: "Austin, Texas",
     icon: paypal,
     iconBg: "#E6DEDD",
-    date: "July 2023 - Present",
-    points: ["Part of the API Excellence and Sandbox Engineering team"],
+    date: "July 2023 - January 2024",
+    points: [
+      "Developed a next generation SDK Explorer to improve merchant integration experience by 300% using React and Node.js",
+      "Built a comprehensive Storybook for hosting 10+ highly reusable and testable React components for payments integration",
+      "Architected and developed a code editor to expose 100+ code samples for 3x faster PayPal payments and checkout",
+      "Collaborated with 3 teams, architects, product managers and UX teams to build a brand-new module federated Developer Studio using React and Node.js to enhance user experience KPIs by 50%",
+    ],
   },
   {
     title: "Senior Software Engineer",
