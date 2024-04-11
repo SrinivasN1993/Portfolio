@@ -20,6 +20,7 @@ import {
   java,
   aws,
   paypal,
+  hubspot,
 } from "../assets";
 
 export const navLinks = [
@@ -58,7 +59,7 @@ const services = [
 
 const metrics = [
   {
-    number: 6,
+    number: 7,
     spChar: "",
     measure: "Years of Experience",
   },
@@ -131,6 +132,15 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Senior Software Engineer 1",
+    company_name: "HubSpot",
+    location: "Remote, Cambridge, MA",
+    icon: hubspot,
+    iconBg: "#E6DEDD",
+    date: "Apr 2024 - Present",
+    points: [],
+  },
+  {
     title: "Software Engineer 3",
     company_name: "PayPal",
     location: "Austin, Texas",
@@ -138,10 +148,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "July 2023 - January 2024",
     points: [
-      "Developed a next generation SDK Explorer to improve merchant integration experience by 300% using React and Node.js",
+      "Developed a next-generation SDK Explorer to improve merchant integration experience by 300% using React and Node.js",
       "Built a comprehensive Storybook for hosting 10+ highly reusable and testable React components for payments integration",
       "Architected and developed a code editor to expose 100+ code samples for 3x faster PayPal payments and checkout",
-      "Collaborated with 3 teams, architects, product managers and UX teams to build a brand-new module federated Developer Studio using React and Node.js to enhance user experience KPIs by 50%",
+      "Collaborated with 3 teams, architects, product managers, and UX teams to build a brand-new module federated Developer Studio using React and Node.js to enhance user experience KPIs by 50%",
     ],
   },
   {

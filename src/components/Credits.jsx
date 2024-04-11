@@ -9,7 +9,7 @@ const Credits = () => {
       <motion.div variants={textVariant()}>
         <h4 className="text-center mt-12 flex justify-center items-center">
           <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
-          &nbsp;2023. All Rights Reserved.
+          &nbsp;2024. All Rights Reserved.
         </h4>
         <h3 className="text-center mt-1">
           Made Possible by &nbsp;

@@ -55,11 +55,10 @@ const About = () => {
           >
             I specialize in building data-intensive web products that offer the
             best user experience and maximize business value. With extensive
-            experience in TypeScript, JavaScript (ES6), and frameworks such as
-            Angular and Node.js, I can code your ideas to life. I am versatile
-            and collaborate closely with clients to create efficient, scalable,
-            and user-friendly web products that solve real-world problems.{" "}
-            <br />
+            experience in JavaScript (ES6), TypeScript, Angular, React, and
+            Node.js, I can code your ideas to life. I am versatile and
+            collaborate closely with clients to create efficient, scalable, and
+            user-friendly web products that solve real-world problems. <br />
             <br />
             Let's chat!
           </motion.p>

@@ -25,7 +25,7 @@ import aws from "./tech/aws.png";
 
 import dell from "./company/dell.png";
 import paypal from "./company/paypal.png";
-// import cmu from "./company/cmu.png";
+import hubspot from "./company/hubspot.png";
 import self from "./self.webp";
 import sujit from "./sujit.jpg";
 import subbu from "./subbu.jpg";
@@ -66,4 +66,5 @@ export {
   cmuw,
   garland,
   paypal,
+  hubspot,
 };
