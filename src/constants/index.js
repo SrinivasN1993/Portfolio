@@ -138,7 +138,7 @@ const experiences = [
     icon: hubspot,
     iconBg: "#E6DEDD",
     date: "Apr 2024 - Present",
-    points: [],
+    points: ["Working with the Data Operations Group"],
   },
   {
     title: "Software Engineer 3",
