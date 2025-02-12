@@ -59,17 +59,17 @@ const services = [
 
 const metrics = [
   {
-    number: 7,
+    number: 8,
     spChar: "",
     measure: "Years of Experience",
   },
   {
-    number: 20,
+    number: 25,
     spChar: "+",
     measure: "Projects Delivered",
   },
   {
-    number: 200000,
+    number: 300000,
     spChar: "+",
     measure: "Users Impacted",
   },
@@ -138,7 +138,14 @@ const experiences = [
     icon: hubspot,
     iconBg: "#E6DEDD",
     date: "Apr 2024 - Present",
-    points: ["Working with the Data Operations Group"],
+    points: [
+      "Architected and developed a permissions system for lists using React and Zustand, allowing finer segmentation within users and teams and boosting customer efficiency CSAT by 5%.",
+      "Built an auditing tool to analyze, restore, or clone a prior list version, improving customer satisfaction by 10%",
+      "Developed error-handling and reporting features for an AI assistant for lists, resulting in improved user experience",
+      "Improved PR cycle time by 3x and introduced 3+ measures for resilient unit and acceptance tests",
+      "Mentored a team of 3 junior engineers through 1:1 sessions and code reviews",
+      "Collaborated with cross-functional teams, UX designers, and product managers in a fast-paced Agile environment",
+    ],
   },
   {
     title: "Software Engineer 3",
@@ -146,12 +153,12 @@ const experiences = [
     location: "Austin, Texas",
     icon: paypal,
     iconBg: "#E6DEDD",
-    date: "July 2023 - January 2024",
+    date: "Jul 2023 - Jan 2024",
     points: [
-      "Developed a next-generation SDK Explorer to improve merchant integration experience by 300% using React and Node.js",
+      "Developed a next-generation SDK Explorer to improve merchant integration experience by 300% with React and Node.js",
       "Built a comprehensive Storybook for hosting 10+ highly reusable and testable React components for payments integration",
       "Architected and developed a code editor to expose 100+ code samples for 3x faster PayPal payments and checkout",
-      "Collaborated with 3 teams, architects, product managers, and UX teams to build a brand-new module federated Developer Studio using React and Node.js to enhance user experience KPIs by 50%",
+      "Collaborated with 3 teams, architects, product managers, and UX teams to build a brand-new module federated Developer Studio with React and Node.js to enhance user experience KPIs by 50%",
     ],
   },
   {
@@ -162,15 +169,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2021 - Apr 2022",
     points: [
-      "Oversaw front-end architecture, design, implementation, and customer engagement",
-      "Architected and developed a data-intensive Angular application that automated a 7-day manual process",
+      "Oversaw front-end architecture, design, implementation, and customer engagement for core Supply Chain applications",
+      "Architected and developed a data-intensive Angular application that automated a 7-day manual supportability process",
       "Enhanced information consistency by 50% through reactive state management with ngRx and RxJS",
       "Spearheaded 3 UI projects with E2E testing and provided accurate order availability dates to Sales teams",
-      "Built 3+ advanced features such as big data caching, lazy-loading, and HTTP interceptors",
-      "Enforced cross-browser compatibility, 100% test coverage, and WCAG with >95% accessibility scores ",
-      "Mentored a team of 6 junior engineers and testers through 1:1 sessions and code reviews",
-      "Collaborated with cross-functional teams, UX designers, and product managers in a fast-paced Agile environment",
-      "Achieved a 24-48 hour turnaround time for critical business requests",
+      "Enforced cross-browser compatibility, 100% test coverage, and WCAG with minimum 95% accessibility scores",
     ],
   },
   {
@@ -181,13 +184,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Oct 2018 - Apr 2021",
     points: [
-      "Engineered an order experience platform with Angular that replaced 11 legacy applications",
+      "Engineered an order experience platform with Angular that replaced 11 legacy order management applications",
       "Devised 10+ innovative customer-first features with TypeScript, HTML, and CSS, such as state memoization",
       "Spearheaded UI integration of Dell and EMC order systems as part of the $67 billion merger",
-      "Enforced 3x better security and seamless login through Single Sign-On, OAuth, and JWT",
-      "Established personalized views and micro-frontends for Sales, Finance, and Logistics teams",
+      "Developed personalized views and micro-frontends with a microservices architecture for Sales, Finance, and Logistics teams",
       "Delivered order information to over 50K internal users in close collaboration with backend and DevOps engineers",
-      "Built a real-time notification framework with web sockets that reduced server overhead by 80%",
     ],
   },
   {
@@ -198,11 +199,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jul 2016 - Sep 2018",
     points: [
-      "Developed single-page applications for a data orchestration tool with more than 40 downstream/upstream applications",
+      "Built single-page applications for a data orchestration platform with more than 40 downstream/upstream applications",
       "Devised a cross-platform mobile app with React-Native that resulted in 80% faster defect resolution during releases",
       "Built an issue resolution tool for Dell India Customer Care using Angular, increased customer satisfaction by 25%",
-      "Performed unit testing with Karma and Jest and achieved 100% code coverage and 80% fewer errors",
-      "Initiated the adoption of Angular and React and modernized 3 complex web applications",
     ],
   },
 ];
